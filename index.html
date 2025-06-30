@@ -12,6 +12,7 @@
     <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64," />
 
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script src="js/auth-guard.js"></script>
   </head>
   <body>
     <div class="relative flex size-full min-h-screen flex-col bg-white group/design-root overflow-x-hidden" style='font-family: Inter, "Noto Sans", sans-serif;'>
@@ -251,7 +252,7 @@
               <div class="flex flex-col gap-3 pb-3">
                 <div
                   class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-xl"
-                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBN14TjS6UxXp1Qe54Ofd3gqMJCwenx9nE0l08OJgQ5Qgto6uogtS6ac1jdwROo7btfgS14LkwfD-7O0hTVOGUrx8MsFakqSAGNii1aIRDdegL4htX4UwteQsr2FILGvJ2UABQtASKdPjwYRRCNzzFpuuuyLfs5ooOPt4aZ6y7-0TdF_2qY2vZuudmmIddW_W07_A0dc3GezfWW23-NS_i6gOnFEC6ckS6FMuDZPecofhjEEafohKG57EErtG-IA7hs1yEzGOiSqzs9GFzo");'
+                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBN14TjS6UxXp1Qe54Ofd3gqMJCwenx9nE0l08OJgQ5Qgto6uogtS6ac1jdwROo7btfgS14LkwfD-7O0hTVOGUrx8MsFakqSAGNii1aIRDdegL4htX4UwteQsr2FILGvJ2UABQtASKdPjwYRRCNzzFpuuuyLfs5ooOPt4aZ6y7-0TdF_2qY2vZuudmmIddW_W07_A0dc3GezfWW23-NS_i6gOnFEC6ckS6FMuDZPecohjEEafohKG57EErtG-IA7hs1yEzGOiSqzs9GFzo");'
                 ></div>
                 <p class="text-[#111518] text-base font-medium leading-normal">Hot</p>
               </div>
@@ -293,7 +294,7 @@
               <div class="flex flex-col gap-3 pb-3">
                 <div
                   class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-xl"
-                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuB6y7a5y9mkSAS7Eqf33-kYkjB3B7Go_7DHkFw5q2eNEa253dZwQ3kCMKMhQi55-wdPmBNa2c6UPI_ryBroyI875K9o39ZQRFhG5pBKc1ZHOqrBfO15c3_UV3Fe8AosttRRjBWiKJBLWRmzcfYQyx4S1yVqHfHin5Ta1E2BryNrp1GJB5LhIIX20uhpopRV0t3CEU_gaBrRlPSwdXGTYGGuD_JwUzOL_HQfXLc4YJWE68HtMoVs9VdkxBZ3t3AW3pAchpp7gF3xqUs");'
+                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuB6y7a5y9mkSAS7Eqf33-kYkjB3B7Go_7DHkFw5q2eNEa253dZwQ3kCMKMhQi55-wdPmBNa2c6UPI_ryBroyI875K9o39ZQRFhG5pBKc1ZHOqrBfO15c3_UV3Fe8AosttRRjBWiKJBLWRmzcfYQyx4S1yVqHfHin5Ta1E2BryNrp1GJB5Lhi7Ugj8_ZxDWtlvZtvaMoJyribP8tF5dPf6MnQKOQBF5_qXZ4jkHWSvKThoxu4nAb5sIq0kASnibWYUEfJf--86J_xDuM");'
                 ></div>
                 <p class="text-[#111518] text-base font-medium leading-normal">Loud</p>
               </div>
@@ -888,7 +889,7 @@
               <div class="flex flex-col gap-3 pb-3">
                 <div
                   class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-xl"
-                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCfckOGPTGlHrtrfMEoZUPUKdUFcl1fINQbedIR7fF6eoRzD7sv_LAO6CUURtPaBpHIir4sGz27HO1vlnemlZ2Le-gWd9KUmXl6qI6ee5pkRntAt5mlKABa5yAfJ2HcvExr77LGFR-ybsqfq5mOy-c4x4DRlmK18df6d5CX81OzMnHeLRevRLcj_FsMg0x0csEF6etPlqplIYUI_IiLoHYa77nE_LYNMokYEfKrFcFhDeuLaZ5lgKmWAAnNaB-5rscgT6uIxeg3jE0");'
+                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCfckOGPTGlHrtrfMEoZUPUKdUFcl1fINQbedIR7fF6eoRzD7sv_LAO6CUURtPaBpHIir4sGz27HO1vlnemlZ2Le-gWd9KUmXl6qI6ee5pkRntAt5mlKABa5yAGU8mO8yslFkyX1ePMhbEcPXTzZiChoAZKqE9zQH0RMhq5yC3az4DVvo2im2fOLz99Kr0HlOl72K3lM3gjA4BoiWQsCbWG9kWF7105NU6krcCMbIH3-dnpGQpvcYRcZT7QJJKQQpgVaa-61WT1v5_k");'
                 ></div>
                 <p class="text-[#111518] text-base font-medium leading-normal">Any</p>
               </div>
@@ -1441,7 +1442,7 @@
               <div class="flex flex-col gap-3 pb-3">
                 <div
                   class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-xl"
-                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDuED1oGjH57UdqBc3Xm2uHuFiWtFnP9SQOo74FBylQVGP6hlmWdvNtJvTF0RkojsU69S_l7bvk6s_8Y0ZVXG5hvh9rje54sr9NKAepGX88FGWSgH-jKTE0veaxh0VQyjNUO-PtQqPcsoUGPByzyFC5_obM7Hq3da1p1O7PYOCJ9JIZx_ER9Vu1Cm7Gm3O44ZGbsb7iRturgt028jlk3uusV5YIr639FUFuIsZd3h_dntLyCc_rz1VaVoSblf8bMqyU_dVlQmeMRKw");'
+                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDuED1oGjH57UdqBc3Xm2uHuFiWtFnP9SQOo74FBylQVGP6hlmWdvNtJvTF0RkojsU69S_l7bvk6s_8Y0ZVXG5hvh9rje54sr9NKAepGX88FGWSgH-jKTE0veaxh0VQyjNUO-PtQqPcsoUGPByzyFC5_obM7Hq3da1p7PYOCJ9JIZx_ER9Vu1Cm7Gm3O44ZGbsb7iRturgt028jlk3uusV5YIr639FUFuIsZd3h_dntLyCc_rz1VaVoSblf8bMqyU_dVlQmeMRKw");'
                 ></div>
                 <p class="text-[#111518] text-base font-medium leading-normal">A winter</p>
               </div>
@@ -1595,7 +1596,7 @@
               <div class="flex flex-col gap-3 pb-3">
                 <div
                   class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-xl"
-                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAL5LoMX4WH6Q0WABRm1_IlnQd1GsVQYWJMslkCFsAIQ3bTMlq68NHksQjM1_t8q3T1Zdq0RP52yHjTeB01aGAmPT59p7U01HlTUrcNQ0rceDD3ZwIpmtJhgRN7gyjLVaYq19I8RWwPoHGfR7jwDgKsoj0dW0P3360QJJzd30yeb1qKH9oI0aFltPQCjtHFcoI503CmmmMOqsu3bsboMUW-AddaKhKwp1PLp3Aelrsi3ddLw48haENkZ1fqPeYda3uuaiwF3Wlqea0");'
+                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAL5LoMX4WH6Q0WABRm1_IlnQd1GsVQYWJMslkCFsAIQ3bTMlq68NHksQjM1_t8q3T1Zdq0RP52yHjTeB01aGAmPT59p7U01HlTUrcNQ0rceDD3ZwIpmtJhgRN7gyjLVaYq19I8RWwPoHGfR7jwDgKsoj0dW0P3360QJJJzd30yeb1qKH9oI0aFltPQCjtHFcoI503CmmmMOqsu3bsboMUW-AddaKhKwp1PLp3Aelrsi3ddLw48haENkZ1fqPeYda3uuaiwF3Wlqea0");'
                 ></div>
                 <p class="text-[#111518] text-base font-medium leading-normal">A line</p>
               </div>
@@ -1771,10 +1772,6 @@
               <div class="flex flex-col gap-3 pb-3"><p class="text-[#111518] text-base font-medium leading-normal">A quiet</p></div>
               <div class="flex flex-col gap-3 pb-3"><p class="text-[#111518] text-base font-medium leading-normal">An up</p></div>
               <div class="flex flex-col gap-3 pb-3"><p class="text-[#111518] text-base font-medium leading-normal">A down</p></div>
-              <div class="flex flex-col gap-3 pb-3"><p class="text-[#111518] text-base font-medium leading-normal">An in</p></div>
-              <div class="flex flex-col gap-3 pb-3"><p class="text-[#111518] text-base font-medium leading-normal">An out</p></div>
-              <div class="flex flex-col gap-3 pb-3"><p class="text-[#111518] text-base font-medium leading-normal">An on</p></div>
-              <div class="flex flex-col gap-3 pb-3"><p class="text-[#111518] text-base font-medium leading-normal">An off</p></div>
               <div class="flex flex-col gap-3 pb-3"><p class="text-[#111518] text-base font-medium leading-normal">An open</p></div>
               <div class="flex flex-col gap-3 pb-3"><p class="text-[#111518] text-base font-medium leading-normal">A close</p></div>
               <div class="flex flex-col gap-3 pb-3"><p class="text-[#111518] text-base font-medium leading-normal">A yes</p></div>
