@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stitch Design</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?display=swap&family=Inter:wght@400;500;700;900&family=Noto+Sans:wght@400;500;700;900"
+    />
+
+    <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64," />
+
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  </head>
+
+  <body class="bg-white min-h-screen font-[Inter,'Noto Sans',sans-serif] overflow-x-hidden">
+    <div class="flex flex-col min-h-screen">
+      <!-- Header -->
+      <header class="flex items-center justify-between border-b border-[#f0f2f5] px-10 py-3">
+        <div class="flex items-center gap-4">
+          <svg class="w-4 h-4 text-[#111518]" fill="currentColor" viewBox="0 0 48 48">
+            <path
+              d="M24 45.8096C19.6865 45.8096 15.4698 44.5305 11.8832 42.134C8.29667 39.7376 5.50128 36.3314 3.85056 32.3462C2.19985 28.361 1.76794 23.9758 2.60947 19.7452C3.451 15.5145 5.52816 11.6284 8.57829 8.5783C11.6284 5.52817 15.5145 3.45101 19.7452 2.60948C23.9758 1.76795 28.361 2.19986 32.3462 3.85057C36.3314 5.50129 39.7376 8.29668 42.134 11.8833C44.5305 15.4698 45.8096 19.6865 45.8096 24L24 24L24 45.8096Z"
+            ></path>
+          </svg>
+          <h2 class="text-lg font-bold tracking-tight text-[#111518]">SpeakEasy</h2>
+        </div>
+
+        <div class="flex items-center gap-8">
+          <button
+            type="button"
+            class="flex items-center gap-2 px-2.5 h-10 rounded-full bg-[#f0f2f5] text-sm font-bold text-[#111518]"
+          >
+            <svg width="20" height="20" fill="currentColor" viewBox="0 0 256 256">
+              <path
+                d="M140,180a12,12,0,1,1-12-12A12,12,0,0,1,140,180ZM128,72c-22.06,0-40,16.15-40,36v4a8,8,0,0,0,16,0v-4c0-11,10.77-20,24-20s24,9,24,20-10.77,20-24,20a8,8,0,0,0-8,8v8a8,8,0,0,0,16,0v-.72c18.24-3.35,32-17.9,32-35.28C168,88.15,150.06,72,128,72Zm104,56A104,104,0,1,1,128,24,104.11,104.11,0,0,1,232,128Zm-16,0a88,88,0,1,0-88,88A88.1,88.1,0,0,0,216,128Z"
+              ></path>
+            </svg>
+            Help
+          </button>
+
+          <div
+            class="w-10 h-10 rounded-full bg-cover bg-center"
+            style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBZIacbpD7sWh_OmHVXh22zvTVkqy89mPYTY84iEStofAW-E57zhAn--TpMtGdkvTFR3mVrZqGjOzTrv7XMgwPMzZDao9ZfG_Z5_PxmXWfrzaKWsScbc63ItWAe8XkVgyZAfXRV3Tyd0MNk_FcS5UzgkNaD6B5xCYfbJ5sNZv6qS6y_TWDVvnb5aiuYmNPugwk0S05rwT1vG0QvAz7rMzg-WdnfGHAHLxajjI3fLWlgF24K54J9rNBL7WkK6izdXALJd2lUUDgoxW4');"
+          ></div>
+        </div>
+      </header>
+
+      <!-- Main Section -->
+      <main class="flex justify-center px-6 py-10">
+        <div class="w-full max-w-3xl space-y-6">
+          <!-- Title -->
+          <h1 class="text-[32px] font-bold tracking-tight text-[#111518]">Add to Grid</h1>
+
+          <!-- Name Input -->
+          <input
+            type="text"
+            placeholder="Name"
+            class="w-full h-14 p-4 border border-[#dbe1e6] rounded-xl text-[#111518] placeholder-[#60768a] focus:border-[#0b80ee] focus:outline-none"
+          />
+
+          <!-- Radio Buttons -->
+          <div class="space-y-3">
+            <label class="flex items-center gap-3 p-3 border rounded-xl border-[#dbe1e6]">
+              <input type="radio" name="type" checked class="form-radio text-[#111518]" />
+              <span class="text-sm font-medium text-[#111518]">A Word</span>
+            </label>
+            <label class="flex items-center gap-3 p-3 border rounded-xl border-[#dbe1e6]">
+              <input type="radio" name="type" class="form-radio text-[#111518]" />
+              <span class="text-sm font-medium text-[#111518]">A Category</span>
+            </label>
+          </div>
+
+          <!-- Select Dropdown -->
+          <select
+            class="w-full h-14 p-4 border border-[#dbe1e6] rounded-xl text-[#111518] bg-white focus:border-[#0b80ee] focus:outline-none"
+          >
+            <option selected>Choose a Category</option>
+            <option>Two</option>
+            <option>Three</option>
+          </select>
+
+          <!-- Image Search -->
+          <div class="flex items-center rounded-xl bg-[#f0f2f5] overflow-hidden">
+            <div class="pl-4 text-[#60768a]">
+              <svg width="24" height="24" fill="currentColor" viewBox="0 0 256 256">
+                <path
+                  d="M229.66,218.34l-50.07-50.06a88.11,88.11,0,1,0-11.31,11.31l50.06,50.07a8,8,0,0,0,11.32-11.32ZM40,112a72,72,0,1,1,72,72A72.08,72.08,0,0,1,40,112Z"
+                ></path>
+              </svg>
+            </div>
+            <input
+              type="text"
+              placeholder="Search Icon Library"
+              class="flex-1 h-12 px-4 bg-[#f0f2f5] border-none focus:outline-none text-[#111518] placeholder-[#60768a]"
+            />
+          </div>
+
+          <!-- Image Grid -->
+          <div class="grid grid-cols-[repeat(auto-fit,minmax(158px,1fr))] gap-4">
+            <!-- Example of one image block -->
+            <div class="aspect-square bg-center bg-cover rounded-xl" style="background-image: url('YOUR_IMAGE_URL');"></div>
+            <!-- Repeat above div with different image URLs as needed -->
+          </div>
+
+          <!-- Buttons -->
+          <div class="flex justify-between pt-6">
+            <button class="h-10 px-4 rounded-full bg-[#f0f2f5] text-sm font-bold text-[#111518]">Upload Image</button>
+            <div class="space-x-3">
+              <button class="h-10 px-4 rounded-full bg-[#f0f2f5] text-sm font-bold text-[#111518]">Cancel</button>
+              <button class="h-10 px-4 rounded-full bg-[#0b80ee] text-sm font-bold text-white">Save to Grid</button>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>

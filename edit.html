@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Stitch Design</title>
+
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?display=swap&family=Inter:wght@400;500;700;900&family=Noto+Sans:wght@400;500;700;900"
+    />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <style>
+      :root {
+        --radio-dot-svg: url("data:image/svg+xml,%3csvg viewBox='0 0 16 16' fill='rgb(17,21,24)' xmlns='http://www.w3.org/2000/svg'%3e%3ccircle cx='8' cy='8' r='3'/%3e%3c/svg%3e");
+        --select-button-svg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='24px' height='24px' fill='rgb(96,118,138)' viewBox='0 0 256 256'%3e%3cpath d='M181.66,170.34a8,8,0,0,1,0,11.32l-48,48a8,8,0,0,1-11.32,0l-48-48a8,8,0,0,1,11.32-11.32L128,212.69l42.34-42.35A8,8,0,0,1,181.66,170.34Zm-96-84.68L128,43.31l42.34,42.35a8,8,0,0,0,11.32-11.32l-48-48a8,8,0,0,0-11.32,0l-48,48A8,8,0,0,0,85.66,85.66Z'%3e%3c/path%3e%3c/svg%3e");
+      }
+    </style>
+  </head>
+  <body class="bg-white text-[#111518] font-[Inter,Noto Sans,sans-serif]">
+    <div class="relative min-h-screen flex flex-col overflow-x-hidden">
+      <header class="flex items-center justify-between border-b border-[#f0f2f5] px-10 py-3">
+        <div class="flex items-center gap-4">
+          <div class="size-4">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M24 45.8096C19.6865 45.8096 15.4698 44.5305 11.8832 42.134C8.29667 39.7376 5.50128 36.3314 3.85056 32.3462C2.19985 28.361 1.76794 23.9758 2.60947 19.7452C3.451 15.5145 5.52816 11.6284 8.57829 8.5783C11.6284 5.52817 15.5145 3.45101 19.7452 2.60948C23.9758 1.76795 28.361 2.19986 32.3462 3.85057C36.3314 5.50129 39.7376 8.29668 42.134 11.8833C44.5305 15.4698 45.8096 19.6865 45.8096 24L24 24L24 45.8096Z"
+                fill="currentColor"
+              />
+            </svg>
+          </div>
+          <h2 class="text-lg font-bold tracking-tight">SpeakEasy</h2>
+        </div>
+        <button class="h-10 w-10 rounded-full bg-[#f0f2f5] flex items-center justify-center">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 256 256">
+            <path
+              d="M205.66,194.34a8,8,0,0,1-11.32,11.32L128,139.31,61.66,205.66a8,8,0,0,1-11.32-11.32L116.69,128,50.34,61.66A8,8,0,0,1,61.66,50.34L128,116.69l66.34-66.35a8,8,0,0,1,11.32,11.32L139.31,128Z"
+            />
+          </svg>
+        </button>
+      </header>
+
+      <main class="flex flex-1 justify-center px-4 py-5">
+        <form class="w-full max-w-[512px] flex flex-col gap-6">
+          <h2 class="text-[28px] font-bold text-center">Edit Item</h2>
+
+          <!-- Name input -->
+          <label class="flex flex-col gap-2">
+            <span class="text-base font-medium">Name</span>
+            <input
+              id="name"
+              name="name"
+              type="text"
+              placeholder="Enter item name"
+              class="h-14 rounded-xl p-4 bg-[#f0f2f5] text-base focus:outline-none"
+            />
+          </label>
+
+          <!-- Type radio buttons -->
+          <fieldset class="flex flex-col gap-3">
+            <legend class="sr-only">Item Type</legend>
+            <label class="flex items-center gap-4 rounded-xl border p-4">
+              <input
+                type="radio"
+                name="type"
+                value="word"
+                checked
+                class="h-5 w-5 bg-transparent border-2 border-[#dbe1e6] checked:border-[#111518] focus:outline-none"
+              />
+              <span class="text-sm font-medium">Word</span>
+            </label>
+            <label class="flex items-center gap-4 rounded-xl border p-4">
+              <input
+                type="radio"
+                name="type"
+                value="phrase"
+                class="h-5 w-5 bg-transparent border-2 border-[#dbe1e6] checked:border-[#111518] focus:outline-none"
+              />
+              <span class="text-sm font-medium">Phrase</span>
+            </label>
+          </fieldset>
+
+          <!-- Category select -->
+          <label class="flex flex-col gap-2">
+            <span class="text-base font-medium">Choose a Category</span>
+            <select
+              name="category"
+              class="h-14 rounded-xl p-4 bg-[#f0f2f5] text-base focus:outline-none appearance-none"
+              style="background-image: var(--select-button-svg); background-repeat: no-repeat; background-position: right 1rem center;"
+            >
+              <option value="">-- Select a category --</option>
+              <option value="one">One</option>
+              <option value="two">Two</option>
+              <option value="three">Three</option>
+            </select>
+          </label>
+
+          <!-- Icon preview -->
+          <div>
+            <h3 class="text-lg font-bold pb-2">Icon</h3>
+            <div class="aspect-[3/2] rounded-xl overflow-hidden bg-center bg-no-repeat bg-cover"
+              style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBOjEP4N2iUeeJpueO837-9OVOiZXsUGRSRNLjPowg2OMixGn_7SAIjNzb13vpKBfe1SsB-UAyl4Gw-CqYXLJ4dtJ08IcRvfnBToXWe8OhllAHIJLXKkzkUBCjmH4TJ0LW2UaQ0FV8skpNhKpMZUoA8NicbW-Hq47bnXedEri9-GoffouMIxgRRZgkJcYDqWkOkcxdooVyzkY7OdqEzS2f1tqe6P8O1975fBrbJagMLzZFc0VIrkMs-XvM30W6zTxiZwSyQkej0n60');">
+            </div>
+          </div>
+
+          <!-- Icon buttons -->
+          <div class="flex justify-between gap-3">
+            <button type="button" class="h-10 px-4 rounded-full bg-[#f0f2f5] font-bold text-sm">Search Icon Library</button>
+            <button type="button" class="h-10 px-4 rounded-full bg-[#f0f2f5] font-bold text-sm">Upload Image</button>
+          </div>
+
+          <!-- Action buttons -->
+          <div class="flex justify-between gap-3">
+            <button type="button" class="h-10 px-4 rounded-full bg-transparent font-bold text-sm">Delete Item</button>
+            <button type="reset" class="h-10 px-4 rounded-full bg-[#f0f2f5] font-bold text-sm">Cancel</button>
+            <button type="submit" class="h-10 px-4 rounded-full bg-[#0b80ee] text-white font-bold text-sm">Save Changes</button>
+          </div>
+        </form>
+      </main>
+    </div>
+  </body>
+</html>
