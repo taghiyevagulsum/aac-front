@@ -2,7 +2,7 @@
 const CONFIG = {
     // API endpoints - replace with your actual backend URLs
     // For production, use your deployed backend URL
-    API_BASE_URL: 'https://goldfish-app-un8nb.ondigitalocean.app',
+    API_BASE_URL: 'https://goldfish-app-un8nb.ondigitalocean.app/api',
     
     // Alternative examples for different deployment scenarios:
     // API_BASE_URL: 'https://your-backend-domain.com/api',  // Custom domain

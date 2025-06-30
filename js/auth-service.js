@@ -92,7 +92,7 @@ class AuthService {
         localStorage.removeItem('aac_auth_token');
         localStorage.removeItem('aac_user_data');
         
-        // Redirect to login page
+        // Redirect to signup page
         window.location.href = 'signup.html';
     }
 
