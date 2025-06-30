@@ -3,7 +3,7 @@
 document.addEventListener('DOMContentLoaded', async function() {
   // Check authentication
   if (!authService.isLoggedIn()) {
-    window.location.href = 'login.html';
+    window.location.href = 'signup.html';
     return;
   }
 

@@ -93,7 +93,7 @@ class AuthService {
         localStorage.removeItem('aac_user_data');
         
         // Redirect to login page
-        window.location.href = 'login.html';
+        window.location.href = 'signup.html';
     }
 
     getAuthHeaders() {
